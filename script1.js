@@ -27,7 +27,7 @@ function test(x) {
     let y = //x에 3을 곱하는 연산식
     console.log(y)
 }
-addnum(3, 5)
+test(3, 5)
 // 익명 함수 변수 할당
 const multi = function(x, y) {//x,y를 받아서 두 수를 곱하여 출력하는 함수
     console.log(/*연산식*/)
