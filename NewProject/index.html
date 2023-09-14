@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>음악 플레이어</title>
+</head>
+<body>
+  <h1>음악 플레이어</h1>
+  
+  <div id="player-controls">
+    <button id="prev-button">이전 곡</button>
+    <button id="play-pause-button">재생</button>
+    <button id="next-button">다음 곡</button><br>
+    <button id="shuffle-button">순서</button>
+  </div>
+  
+  <div id="song-info-container">
+    <p id="song-info">곡 정보</p>
+    <p id="artist-info">아티스트 정보</p>
+  </div>
+  
+  <div id="volume-control">
+    <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.5">
+  </div>
+  
+  <div id="playlist-order">
+    <p>플레이리스트 순서: <span id="order-info"></span></p>
+  </div>
+  
+  <audio id="audio-player" controls>
+    <source src="" type="audio/mpeg" id="audio-source">
+    Your browser does not support the audio element.
+  </audio>
+  
+  <script src="./JS/script.js"></script>
+</body>
+</html>

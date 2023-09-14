@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .player-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  button {  
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  input[type="range"] {
+    width: 30%;
+  }
+  
+  .scrolling-text {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  #artist-info {
+    text-align: center;
+  }
+  
+  .scrolling-text #audio-source {
+    display: inline-block;
+    margin: 0;
+    padding: 5px;
+    animation: scroll 10s linear infinite;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
